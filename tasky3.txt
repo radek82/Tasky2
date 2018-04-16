@@ -1,0 +1,26 @@
+﻿/** Aspx file **/
+
+Seperate javscript
+Seperate css
+Bundle? 
+Should the JS and Css even be referenced in this file?
+GetLanguageString("/applicationform/requiredfield") -> make one method/property?
+Visible='<%# Int32.Parse(PropertyService.GetStringProperty(CurrentPage, "NumberOfFileUploads")) > 0 %>'> -> Backend Logic?
+
+
+/** Aspx.cs **/
+Naming convention? btnShowFileUpload_Click - Btn_SubmitForm_Click
+Spilt up logic into different services/helpers/logic classes.
+Hardcoded data (i.e. ContactPerson)!!! -> move to CurrentPage or xml or db
+(string s in addresses) what is s? -> Bad readability of code!
+
+Naming of properties and parameters
+string applicationSender = Txt_Email.Text;
+BuildMail(applicationSender
+protected MailMessage BuildMail(string toAddresses
+
+BuildEmailContent -> dynamically load the controller and get the string from it with html. No need to write html in CB.
+
+
+Cannot figure it out with multiple upload controls?
+
